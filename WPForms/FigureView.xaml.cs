@@ -10,19 +10,26 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TopSystemTest1.WPForms;
 
 namespace TopSystemTest1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for FigureView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class FigureView : Window
     {
-        public MainWindow()
+        public FigureView()
         {
             InitializeComponent();
+        }
+
+        private void TeleportTriangleButton_Click(object sender, RoutedEventArgs e)
+        {
+            TriangleViewForm triangleViewForm = new TriangleViewForm();
+            triangleViewForm.Show();
+            this.Hide();
         }
     }
 }

@@ -5,8 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TopSystemTest1"
         mc:Ignorable="d"
-        Title="Top System" Height="450" Width="800" WindowStyle="ThreeDBorderWindow">
-    <Grid>
-        
-    </Grid>
+        Title="Top System" Height="450" Width="800" WindowStyle="ThreeDBorderWindow" Background="#FF9A9A9A">
+    <Button x:Name="TeleportFormButton" Content="Начало Работы" Margin="200,174,200,0" FontSize="24" Height="80" VerticalAlignment="Top" Click="TeleportFormButton_Click"/>
 </Window>

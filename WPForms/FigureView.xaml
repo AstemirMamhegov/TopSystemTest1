@@ -1,0 +1,21 @@
+﻿<Window x:Class="TopSystemTest1.FigureView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TopSystemTest1"
+        mc:Ignorable="d"
+        Title="Выбор Фигуры" Height="450" Width="800" Background="#FF9A9A9A" WindowStyle="ThreeDBorderWindow" FontSize="16">
+    <Grid x:Name="TableSet" Background="Gray">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Button Content="Треугольники" Margin="245,32,245,32" FontSize="24" Click="TeleportTriangleButton_Click"/>
+        <Button Content="Квадраты" HorizontalAlignment="Center" Margin="0,32,0,32" Grid.Row="1" Width="310" FontSize="24"/>
+        <Button Content="Прямоугольники" HorizontalAlignment="Center" Margin="0,32,0,32" Grid.Row="2" Width="310" FontSize="24"/>
+        <Button Content="В главное меню" HorizontalAlignment="Center" Margin="0,32,0,32" Grid.Row="3" Width="310" FontSize="24"/>
+    </Grid>
+</Window>
