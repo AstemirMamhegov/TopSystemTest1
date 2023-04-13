@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Фигуры" Height="450" Width="800" Background="#FFABAAAA">
     <Grid>
-        <Button x:Name="enterButton" Content="Ввод" HorizontalAlignment="Left" Margin="542,297,0,0" VerticalAlignment="Top" Background="#FFF1F1F1" Width="145" Height="38" FontSize="24" Click="enterButton_Click"/>
+        <Button x:Name="enterButton" Content="Ввод" HorizontalAlignment="Left" Margin="606,355,0,0" VerticalAlignment="Top" Background="#FFF1F1F1" Width="145" Height="38" FontSize="24" Click="enterButton_Click"/>
         <TextBox x:Name="textBoxSideA" HorizontalAlignment="Left" Margin="54,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" Height="36" FontSize="24"/>
         <TextBox x:Name="textBoxSideB" HorizontalAlignment="Left" Margin="293,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" Height="35" FontSize="24"/>
         <TextBox x:Name="textBoxSideC" HorizontalAlignment="Left" Margin="525,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" Height="35" FontSize="24"/>
@@ -17,6 +17,14 @@
             <ComboBoxItem Content="Rectangle"/>
         </ComboBox>
         <Canvas x:Name="canvas" Margin="0,93,0,0"/>
+        <ComboBox x:Name="comboBoxColor" HorizontalAlignment="Left" Margin="567,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxColor_SelectionChanged" >
+            <ComboBoxItem Content="Red"/>
+            <ComboBoxItem Content="Blue"/>
+            <ComboBoxItem Content="Green"/>
+            <ComboBoxItem Content="Gray"/>
+            <ComboBoxItem Content="Purple"/>
+            <ComboBoxItem Content="Yellow"/>
+        </ComboBox>
 
     </Grid>
 </Window>

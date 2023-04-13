@@ -34,14 +34,67 @@ namespace TopSystemTest1.WPForms
             if (comboBoxShape.SelectedIndex == -1)
                 return;
 
-            if (comboBoxShape.SelectedIndex == 0)
+            if (comboBoxColor.SelectedIndex == -1)
+                return;
+
+            Color color = new Color();
+            color.R = 255;
+            color.G = 255;
+            color.B = 255;
+            color.A = 255;
+
+            if (comboBoxColor.SelectedIndex == 0)
             {
-                Color color = new Color();
-                color.A = 255;
+                //Красный
                 color.R = 255;
                 color.G = 0;
                 color.B = 0;
+                color.A = 255;
+            }
+            else if (comboBoxColor.SelectedIndex == 1)
+            {
+                //Синий
+                color.R = 0;
+                color.G = 0;
+                color.B = 255;
+                color.A = 255;
+            }
+            else if (comboBoxColor.SelectedIndex == 2)
+            {
+                //Зеленый
+                color.R = 0;
+                color.G = 255;
+                color.B = 0;
+                color.A = 255;
+            }
+            else if (comboBoxColor.SelectedIndex == 3)
+            {
+                //Серый
+                color.R = 128;
+                color.G = 128;
+                color.B = 128;
+                color.A = 255;
+            }
+            else if (comboBoxColor.SelectedIndex == 4)
+            {
+                //Фиолетовый
+                color.R = 128;
+                color.G = 0;
+                color.B = 128;
+                color.A = 255;
+            }
+            else if (comboBoxShape.SelectedIndex == 5)
+            {
+                //Желтый
+                color.R = 255;
+                color.G = 255;
+                color.B = 0;
+                color.A = 255;
+            }
 
+
+            if (comboBoxShape.SelectedIndex == 0)
+            {
                 float sideA = float.Parse(textBoxSideA.Text);
                 float sideB = float.Parse(textBoxSideB.Text);
                 float sideC = float.Parse(textBoxSideC.Text);
@@ -51,12 +104,6 @@ namespace TopSystemTest1.WPForms
             }
             else if (comboBoxShape.SelectedIndex == 1)
             {
-                Color color = new Color();
-                color.A = 255;
-                color.R = 255;
-                color.G = 0;
-                color.B = 0;
-
                 float radius = float.Parse(textBoxSideA.Text);
 
                 Circle circle = new Circle(radius, color);
@@ -64,12 +111,6 @@ namespace TopSystemTest1.WPForms
             }
             else if (comboBoxShape.SelectedIndex == 2)
             {
-                Color color = new Color();
-                color.A = 255;
-                color.R = 255;
-                color.G = 0;
-                color.B = 0;
-
                 float sideA = float.Parse(textBoxSideA.Text);
                 float sideB = float.Parse(textBoxSideB.Text);
 
@@ -94,9 +135,13 @@ namespace TopSystemTest1.WPForms
             }
             else if (comboBoxShape.SelectedIndex == 2)
             {
-                textBoxSideB.Visibility= Visibility.Visible;
+                textBoxSideB.Visibility = Visibility.Visible;
                 textBoxSideC.Visibility = Visibility.Hidden;
             }
+        }
+
+        private void comboBoxColor_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
         }
     }
 }

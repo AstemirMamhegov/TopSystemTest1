@@ -63,13 +63,6 @@
     <Compile Include="WPForms\ShapeViewForm.xaml.cs">
       <DependentUpon>ShapeViewForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WPForms\TriangleViewForm.xaml.cs">
-      <DependentUpon>TriangleViewForm.xaml</DependentUpon>
-    </Compile>
-    <Page Include="WPForms\FigureView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="WPForms\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -78,18 +71,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WPForms\FigureView.xaml.cs">
-      <DependentUpon>FigureView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="WPForms\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="WPForms\ShapeViewForm.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="WPForms\TriangleViewForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
